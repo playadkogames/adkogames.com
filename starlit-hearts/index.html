@@ -7,7 +7,7 @@
   <meta name="description" content="A cozy idle dating sim. Fly a little starship between the stars, collect Stardust, and help nine lonely girls remember they once loved you.">
   <meta property="og:title" content="Starlit Hearts: Idle Star Collector - ADKO Games">
   <meta property="og:description" content="A cozy idle dating sim. Fly a little starship between the stars, collect Stardust, and help nine lonely girls remember they once loved you.">
-  <meta property="og:image" content="https://adkogames.com/super-style-volley/img/hero.jpg">
+  <meta property="og:image" content="https://adkogames.com/starlit-hearts/img/website-images/hero.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
@@ -25,10 +25,15 @@
     </div>
   </header>
 
-  <section>
+  <section class="hero">
+    <img class="bg" src="img/website-images/hero.jpg" alt="Hana stargazing on the Music Moon">
+    <div class="shade"></div>
+  </section>
+
+  <section class="hero-text">
     <div class="wrap">
       <p class="eyebrow">In development &middot; Cozy idle dating sim</p>
-      <h1>Starlit Hearts</h1>
+      <h1>Starlit Hearts: <span style="color:var(--pink2)">Idle Star Collector</span></h1>
       <p class="lead">A cozy idle dating sim where you fly a little starship between the stars, collect Stardust, and help nine lonely girls remember they once loved you.</p>
       <div class="btns" style="margin-top:24px">
         <a class="btn primary" href="https://forms.gle/pDdn73do8j5i7dEXA" target="_blank" rel="noopener">Get the demo first</a>
@@ -37,15 +42,31 @@
     </div>
   </section>
 
-  <section>
-    <div class="wrap legal">
-      <h2>They forgot you. Help them remember.</h2>
-      <p>Every Starlit lives alone on her own little star: an idol on the Music Moon, a bookworm on the Library Planet, a chef in the Kitchen Nebula. Your starship gathers their Stardust, turns it into handmade gifts, and wins back their Affection.</p>
-      <p>But every Heart Rebirth, they forget you. Rebuild their memories one keepsake at a time, fill their rooms, go on dates, and play their cozy mini-games until every Starlit remembers you for good.</p>
+  <section style="background:linear-gradient(rgba(22,11,24,.6),rgba(22,11,24,.8)),url(img/website-images/hana-room.jpg) center/cover">
+    <div class="wrap" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:32px;align-items:center">
+      <div style="background:rgba(30,12,36,.62);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(255,140,198,.35);border-radius:22px;padding:clamp(22px,4vw,36px);box-shadow:0 20px 50px rgba(0,0,0,.45),0 0 40px rgba(255,105,180,.15)">
+      <p class="eyebrow">&#10022; The story</p>
+      <h2 style="text-shadow:0 3px 14px rgba(0,0,0,.6)">They forgot you.<br><span style="color:var(--pink2)">Help them remember.</span></h2>
+      <p style="font-size:18px;line-height:1.65">Every Starlit lives alone on her own little star: an idol on the <b style="color:var(--gold)">Music Moon</b>, a bookworm on the <b style="color:var(--gold)">Library Planet</b>, a chef in the <b style="color:var(--gold)">Kitchen Nebula</b>. Your starship gathers their <b style="color:var(--gold)">Stardust</b>, turns it into handmade gifts, and wins back their Affection.</p>
+      <p style="font-size:18px;line-height:1.65">But every <b style="color:var(--pink2)">Heart Rebirth</b>, they forget you. Rebuild their memories one keepsake at a time, fill their rooms, go on dates, and play their cozy mini-games until every Starlit <b style="color:var(--pink2)">remembers you for good</b>. &#128150;</p>
+      </div>
+      <img src="img/website-images/hana-reach.webp" alt="Hana reaching for the stars" loading="lazy" style="width:min(75%,380px);margin-inline:auto;filter:drop-shadow(0 10px 30px rgba(255,120,190,.35))">
     </div>
   </section>
 
   <section>
+    <div class="wrap">
+      <h2>A peek inside</h2>
+      <div class="tall" style="grid-template-columns:repeat(auto-fit,minmax(140px,1fr));max-width:922px;margin-inline:auto">
+        <figure style="margin:0;text-align:center"><img src="img/website-images/shot-star-map.jpg" alt="The star map" loading="lazy" style="width:100%;height:auto;aspect-ratio:440/952"><figcaption style="color:var(--muted);font-size:14px;margin-top:8px">The star map</figcaption></figure>
+        <figure style="margin:0;text-align:center"><img src="img/website-images/shot-starlit-cards.jpg" alt="Starlit cards" loading="lazy" style="width:100%;height:auto;aspect-ratio:440/952"><figcaption style="color:var(--muted);font-size:14px;margin-top:8px">Starlit cards</figcaption></figure>
+        <figure style="margin:0;text-align:center"><img src="img/website-images/shot-memory-hallway-hana.jpg" alt="The Memory Hallway" loading="lazy" style="width:100%;height:auto;aspect-ratio:440/952"><figcaption style="color:var(--muted);font-size:14px;margin-top:8px">The Memory Hallway</figcaption></figure>
+        <figure style="margin:0;text-align:center"><img src="img/website-images/shot-hana-date-diary.jpg" alt="Hana's Date Diary" loading="lazy" style="width:100%;height:auto;aspect-ratio:440/952"><figcaption style="color:var(--muted);font-size:14px;margin-top:8px">Hana's Date Diary</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:linear-gradient(rgba(22,11,24,.8),rgba(22,11,24,.9)),url(img/website-images/library.jpg) center/cover">
     <div class="wrap">
       <h2>How it plays</h2>
       <div class="grid three">
@@ -63,10 +84,22 @@
 
   <section>
     <div class="wrap">
+      <h2>Dates, rooms and memories</h2>
+      <div class="shots" style="grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr))">
+        <img src="img/website-images/cafe-date.jpg" alt="A cafe date with Hana" loading="lazy" style="aspect-ratio:4/5;object-fit:cover;width:100%">
+        <img src="img/website-images/rainy-nook.jpg" alt="Shiori in her rainy reading nook" loading="lazy" style="aspect-ratio:4/5;object-fit:cover;width:100%">
+        <img src="img/website-images/concert.jpg" alt="Hana on stage" loading="lazy" style="aspect-ratio:4/5;object-fit:cover;width:100%">
+        <img src="img/website-images/starship-door.jpg" alt="The door to Hana's room" loading="lazy" style="aspect-ratio:4/5;object-fit:cover;width:100%">
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
       <h2>Meet the Starlits</h2>
       <div class="grid three">
-        <div class="card feature"><h3>Hana</h3><p class="eyebrow" style="margin:0 0 6px">the Idol Singer &middot; Music Moon</p><p>Thousands of fans, but nobody knows the girl off stage. She is the first to hear you, and one day the one who always remembers.</p></div>
-        <div class="card feature"><h3>Shiori</h3><p class="eyebrow" style="margin:0 0 6px">the Bookworm &middot; Library Planet</p><p>She lives in stories because real people felt too loud. She wants a reader who sits beside her and doesn't need to talk.</p></div>
+        <div class="card feature"><img src="img/website-images/hana.jpg" alt="Hana" loading="lazy" style="border-radius:12px;margin-bottom:14px"><h3>Hana</h3><p class="eyebrow" style="margin:0 0 6px">the Idol Singer &middot; Music Moon</p><p>Thousands of fans, but nobody knows the girl off stage. She is the first to hear you, and one day the one who always remembers.</p></div>
+        <div class="card feature"><img src="img/website-images/shiori.jpg" alt="Shiori" loading="lazy" style="border-radius:12px;margin-bottom:14px"><h3>Shiori</h3><p class="eyebrow" style="margin:0 0 6px">the Bookworm &middot; Library Planet</p><p>She lives in stories because real people felt too loud. She wants a reader who sits beside her and doesn't need to talk.</p></div>
         <div class="card feature"><h3>Kiko</h3><p class="eyebrow" style="margin:0 0 6px">the Chef &middot; Kitchen Nebula</p><p>She still cooks huge meals for a family that moved away. She needs someone who asks for seconds.</p></div>
         <div class="card feature"><h3>Miwa</h3><p class="eyebrow" style="margin:0 0 6px">the Artist &middot; Atelier Star</p><p>Her paintings never have people in them. She is waiting for a face worth painting.</p></div>
         <div class="card feature"><h3>Rin</h3><p class="eyebrow" style="margin:0 0 6px">the Pro Gamer &middot; Arcade Comet</p><p>A thousand teammates online and no friends. She wants a player two who stays when the match ends.</p></div>
