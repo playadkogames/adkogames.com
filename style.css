@@ -92,9 +92,13 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 18px; justify-content: space
 
 @media (max-width: 640px) {
   section { padding: 52px 0; }
-  .top nav { gap: 12px; flex-wrap: nowrap; }
-  .top nav a { font-size: 13px; white-space: nowrap; }
-  .brand { font-size: 22px; white-space: nowrap; }
+  .top nav { gap: 10px; flex-wrap: nowrap; }
+  .top nav a { font-size: 12.5px; white-space: nowrap; }
+  .brand { font-size: 19px; white-space: nowrap; }
+  .top .wrap { gap: 10px; }
   .top nav a.hide-sm, .top nav .hide-sm { display: none; }
   .btn { width: 100%; text-align: center; }
+}
+@media (max-width: 359px) {
+  .top nav a[href="/#games"], .top nav a[href="#games"] { display: none; }
 }
