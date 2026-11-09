@@ -102,3 +102,12 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 18px; justify-content: space
 @media (max-width: 359px) {
   .top nav a[href="/#games"], .top nav a[href="#games"] { display: none; }
 }
+
+/* Follow us row */
+.follow { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 18px; }
+.follow a { display: inline-block; padding: 12px 20px; border-radius: 999px; border: 2px solid var(--line); background: var(--card); color: var(--text); font-weight: 800; text-decoration: none; }
+.follow a:hover { border-color: var(--pink); color: var(--pink2); }
+
+/* Full banner (art already includes logo + title, so never crop it) */
+.hero.banner .bg { height: auto; aspect-ratio: auto; max-height: none; object-fit: contain; max-width: 1400px; margin: 0 auto; }
+.hero.banner .shade { background: linear-gradient(to bottom, rgba(22, 11, 24, 0) 88%, var(--bg) 100%); }
