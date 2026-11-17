@@ -7,7 +7,7 @@
   <meta name="description" content="Super Style Volley: pong, but with cards. Your side plays itself - you cast the cards. Free demo and playtest from ADKO Games.">
   <meta property="og:title" content="Super Style Volley">
   <meta property="og:description" content="Pong... but with cards. Cast cards, bend the court, win fast matches.">
-  <meta property="og:image" content="https://adkogames.com/super-style-volley/img/pc_game_card_preview.png">
+  <meta property="og:image" content="https://adkogames.com/super-style-volley/img/banner.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
@@ -28,25 +28,30 @@
   </header>
 
   <section class="hero banner">
-    <img class="bg" src="img/pc_game_card_preview.png" width="1200" height="675" alt="Super Style Volley: the chef girl and the vampire knight Boris">
+    <img class="bg" src="img/banner.jpg" width="1200" height="675" fetchpriority="high" alt="Super Style Volley: the chef girl and the vampire knight Boris">
     <div class="shade"></div>
   </section>
 
   <section class="hero-text" id="play">
     <div class="wrap">
-      <p class="lead">Pong... but with cards. Your side plays itself - you cast the cards that slow, freeze and outplay the other player, and give your ball the chance to score.</p>
-      <div class="btns" style="margin-top:24px">
-        <a class="btn primary" href="https://adkogames.itch.io/super-style-volley" target="_blank" rel="noopener">Play the free demo</a>
-        <a class="btn secondary" href="https://forms.gle/pDdn73do8j5i7dEXA" target="_blank" rel="noopener">Join the playtest</a>
+      <p class="eyebrow" style="margin:0">Early access is open on iPhone and Android</p>
+      <div class="btns store-btns" style="margin-top:12px">
+        <a class="btn primary" data-os="ios" href="https://testflight.apple.com/join/9PjtPrw9" target="_blank" rel="noopener">Get it on iPhone</a>
+        <a class="btn primary" data-os="android" href="https://play.google.com/apps/testing/com.adkogames.superstylevolley" target="_blank" rel="noopener">Get it on Android</a>
       </div>
-      <p style="color:var(--muted);font-size:15px;margin-top:14px">Coming to mobile first. Google Play and App Store links will appear here.</p>
+      <p style="color:var(--muted);font-size:15px;margin-top:12px">Android: sign in with Google, then tap "Become a tester".</p>
+      <p class="lead" style="margin-top:22px">Pong... but with cards. Your side plays itself - you cast the cards that slow, freeze and outplay the other player, and give your ball the chance to score.</p>
+      <div class="btns" style="margin-top:18px">
+        <a class="btn ghost" href="https://adkogames.itch.io/super-style-volley" target="_blank" rel="noopener">Play the free demo in your browser</a>
+        <a class="btn ghost" href="https://forms.gle/pDdn73do8j5i7dEXA" target="_blank" rel="noopener">Join the playtest list</a>
+      </div>
     </div>
   </section>
 
   <section>
     <div class="wrap">
       <div class="video">
-        <video src="img/loop.mp4" poster="img/loop-poster.jpg" autoplay muted loop playsinline aria-label="Gameplay: three goals in a row"></video>
+        <video src="img/loop.mp4" preload="metadata" poster="img/loop-poster.jpg" autoplay muted loop playsinline aria-label="Gameplay: three goals in a row"></video>
       </div>
     </div>
   </section>
@@ -105,6 +110,7 @@
     </div>
   </footer>
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script>(function(){var a=/android/i.test(navigator.userAgent)?"android":(/iphone|ipad|ipod/i.test(navigator.userAgent)?"ios":"");if(!a)return;document.querySelectorAll(".store-btns").forEach(function(b){var m=b.querySelector('[data-os="'+a+'"]');if(m){b.prepend(m);b.querySelectorAll("a").forEach(function(x){if(x!==m)x.className="btn ghost";});}});})();</script>
   <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "abee5f40da4d4aecb4408374ab8580bf"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
